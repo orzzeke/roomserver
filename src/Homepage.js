@@ -73,8 +73,13 @@ const Homepage = () => {
 
   function changeDate(e) {
     const catchDate = moment(e.target.value).format("YYYYMMDD");
-    setDateValue(catchDate);
-    checkedData(catchDate);
+    const num = "20230308,20230315,20230322,20230329";
+    if (!num.includes(catchDate)) {
+      alert("超出資料範圍");
+    } else {
+      setDateValue(catchDate);
+      checkedData(catchDate);
+    }
   }
   function SubtractDateBut(i) {
     let num = "";
