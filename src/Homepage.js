@@ -194,13 +194,13 @@ const Homepage = () => {
               <button onClick={() => SubtractDateBut(2)} type="button">
                 <img
                   alt="changePage"
-                  src="https://img.icons8.com/dusk/32/null/circled-chevron-left.png"
+                  src="https://img.icons8.com/dusk/28/null/circled-chevron-left.png"
                 />
               </button>
               <button onClick={() => SubtractDateBut(1)} type="button">
                 <img
                   alt="changePage"
-                  src="https://img.icons8.com/office/32/null/circled-chevron-left.png"
+                  src="https://img.icons8.com/office/28/null/circled-chevron-left.png"
                 />
               </button>
               <input
@@ -212,13 +212,13 @@ const Homepage = () => {
               <button onClick={() => addDateBut(1)} type="button">
                 <img
                   alt="changePage"
-                  src="https://img.icons8.com/office/32/null/circled-chevron-right.png"
+                  src="https://img.icons8.com/office/28/null/circled-chevron-right.png"
                 />
               </button>
               <button onClick={() => addDateBut(2)} type="button">
                 <img
                   alt="changePage"
-                  src="https://img.icons8.com/dusk/32/null/circled-chevron-right.png"
+                  src="https://img.icons8.com/dusk/28/null/circled-chevron-right.png"
                 />
               </button>
             </td>
