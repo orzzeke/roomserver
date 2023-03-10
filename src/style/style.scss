@@ -1,0 +1,88 @@
+$primary: #e8e8d0;
+$highLightColor: #c4e1ff;
+$holidayBaccColor: #fff4c1;
+
+table {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  td {
+    input {
+      text-align: center;
+      width: 60%;
+    }
+  }
+}
+.tdInput:focus {
+  background-color: red !important;
+}
+table,
+tr,
+td,
+th {
+  border-collapse: collapse;
+  border-left: 5px solid $primary;
+  border-right: 5px solid $primary;
+  border: 1px solid $primary;
+  td {
+    input {
+      margin: 0.5rem;
+    }
+  }
+}
+td {
+  width: 18px;
+}
+table {
+  border-left: 3px solid $primary;
+  border-right: 3px solid $primary;
+}
+thead {
+  border: 3px solid $primary;
+}
+#s01,
+#s11,
+#s21,
+#s31,
+#s41 {
+  border-top: 3px solid $primary;
+}
+.baccBlue {
+  background-color: #c4e1ff !important;
+}
+.holidayBaccColor {
+  background-color: $holidayBaccColor;
+}
+.inline {
+  display: inline;
+}
+.iconbtn {
+  float: right;
+}
+.textleft {
+  padding: 0rem 0.5rem;
+  text-align: left;
+}
+.textright {
+  text-align: right;
+}
+.titleInput {
+  width: 10%;
+  text-align: right;
+}
+table p {
+  line-height: 20px;
+}
+.hide {
+  display: none;
+}
+.textRed {
+  color: red;
+}
+.btn {
+  line-height: 1.5rem;
+  margin: 0.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
