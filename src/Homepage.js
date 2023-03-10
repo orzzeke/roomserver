@@ -78,7 +78,9 @@ const Homepage = () => {
   }
   function SubtractDateBut(i) {
     let num = "";
-    if (datevalue >= 20230315) {
+    if (datevalue < 20230309) {
+      alert("超出資料範圍");
+    } else {
       num = Number(datevalue) - i * 7;
       if (localStorage.getItem(`countryItem${num}`)) {
         let getData = localStorage.getItem(`countryItem${num}`);
@@ -93,7 +95,9 @@ const Homepage = () => {
 
   function addDateBut(i) {
     let num = "";
-    if (datevalue <= 20230322) {
+    if (datevalue > 20230328) {
+      alert("超出資料範圍");
+    } else {
       num = Number(datevalue) + i * 7;
       if (localStorage.getItem(`countryItem${num}`)) {
         let getData = localStorage.getItem(`countryItem${num}`);
@@ -107,12 +111,10 @@ const Homepage = () => {
   }
   function checkedData(date) {
     const jsond = {
-      20230301: s20230308,
       20230308: s20230308,
       20230315: s20230315,
       20230322: s20230322,
       20230329: s20230329,
-      20230336: s20230329,
     };
     setJsonData(jsond[date]);
   }
